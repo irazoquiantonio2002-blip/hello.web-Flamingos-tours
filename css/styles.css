@@ -341,7 +341,7 @@ input, select, textarea { font-family: inherit; }
   color: rgba(255,255,255,0.8); font-size: 13.5px; font-weight: 600;
 }
 
-.ambientes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+.ambientes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
 .amb-card {
   position: relative; border-radius: 26px; overflow: hidden; min-height: 460px;
   display: flex; align-items: flex-end;
@@ -359,6 +359,11 @@ input, select, textarea { font-family: inherit; }
   background:
     linear-gradient(150deg, rgba(124,173,48,0.5), rgba(20,56,42,0.6) 60%, rgba(8,27,21,0.82)),
     url('../imagenes/manglares.jpg') center / cover no-repeat;
+}
+.amb-card.tour-express .amb-img {
+  background:
+    linear-gradient(150deg, rgba(28,58,99,0.55), rgba(20,56,42,0.6) 60%, rgba(8,27,21,0.82)),
+    url('../imagenes/laguna-rosa.jpg') center / cover no-repeat;
 }
 .amb-img::after {
   content: ''; position: absolute; inset: 0;
@@ -384,6 +389,7 @@ input, select, textarea { font-family: inherit; }
 .amb-overlay p { color: rgba(255,255,255,0.78); font-size: 14.5px; line-height: 1.7; max-width: 400px; }
 .amb-temp { margin-top: 16px; font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--pink-light); }
 .tour-natural .amb-temp { color: var(--lime); }
+.tour-express .amb-temp { color: #bfe6ff; }
 
 /* ══════════════════════════════════════════════════════
    PROCESO
